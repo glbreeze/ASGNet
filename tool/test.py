@@ -171,7 +171,7 @@ def validate(val_loader, model, criterion, args):
     end = time.time()
     if args.split != 999:
         if args.use_coco:
-            test_num = 20000
+            test_num = 2000
         else:
             test_num = 1000
     else:
