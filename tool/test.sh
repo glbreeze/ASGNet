@@ -32,6 +32,6 @@ singularity exec --nv \
             --overlay /scratch/lg154/python36/python36.ext3:ro \
             --overlay /scratch/lg154/sseg/dataset/coco2014.sqf:ro \
             /scratch/work/public/singularity/cuda11.2.2-cudnn8-devel-ubuntu20.04.sif \
-            /bin/bash -c "source /ext3/env.sh; python -m tool.test --config=${config} > ${result_dir}/test-${shot}shot-$now.log 2>&1"
+            /bin/bash -c "source /ext3/env.sh; python -m tool.test_all --config=${config} > ${result_dir}/test-${shot}shot-$now.log 2>&1"
 echo "finish"
 
