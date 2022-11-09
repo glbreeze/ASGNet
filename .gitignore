@@ -1,0 +1,8 @@
+data/lists
+*.out
+*.pth
+*.txt
+*.pyc
+pretrain/
+*.zip
+.idea/

@@ -1,5 +1,5 @@
 DATA:
-  data_root: './coco_data'
+  data_root: '/coco/'
   train_list: './data/lists/coco/train_data_list.txt'
   val_list: './data/lists/coco/val_data_list.txt'
   classes: 2
@@ -33,7 +33,7 @@ TRAIN:
   print_freq: 5
   save_freq: 20
   save_path: exp/asgnet/coco/split0_resnet50/model
-  weight:
+  weight: ./pretrain/coco/s0_1s_resnet50.pth
   resume:
   evaluate: True
   split: 0
